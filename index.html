@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles7.css">
+</head>
+<body>
+  <!-- Login Page -->
+  <div id="login-page" class="container">
+    <header>
+      <h1>Select Profile</h1>
+    </header>
+    <div class="select-section">
+      <select id="profile-select">
+        <option value="Raman">Raman</option>
+        <option value="Pikachu">Pikachu</option>
+      </select>
+      <button id="login-btn">Login</button>
+    </div>
+  </div>
+
+  <!-- Task Page (hidden initially) -->
+  <div id="task-page" class="container" style="display: none;">
+    <header>
+      <h1 id="profile-header"></h1>
+      <button id="logout-btn">Logout</button>
+    </header>
+    <main>
+      <div class="progress-container">
+        <span>Progress:</span>
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+        <span id="progress-percent">0%</span>
+      </div>
+      <div class="input-section">
+        <input type="text" id="new-task" placeholder="Add a new task..." />
+        <button id="add-btn">Add</button>
+      </div>
+      <ul id="task-list"></ul>
+    </main>
+  </div>
+
+  <script src="script7.js"></script>
+</body>
+</html>
